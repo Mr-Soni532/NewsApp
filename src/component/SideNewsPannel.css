@@ -1,0 +1,21 @@
+.item-container{
+    display: flex;
+    margin: 10px 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+#img-container{
+    max-width: 40%;
+    margin-right: 25px;
+}
+#img-container > img{
+    max-width: 100%;
+    width: 100%;
+    border-radius: .25rem;
+}
+
+#post-heading{
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}

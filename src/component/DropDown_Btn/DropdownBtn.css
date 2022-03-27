@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.box {
+  position: relative;
+  margin-left: 10px;
+}
+
+
+#dropdown_icon {
+  transition-duration: 200ms;
+}
+#dropdown_icon_category {
+  transition-duration: 200ms;
+}
+.dropdown_icon_is-active {
+  transform: rotateZ(-180deg);
+}
+.country_btn{
+  text-align: center;
+  width: 150px;
+}
+.category_btn{
+  text-align: center;
+  width: 150px;
+}
+#dropdown_txt, #dropdown_txt_category {
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+
+.Drop_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  background: none;
+  color: #ffffff8c;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+  border-radius: 2px;
+}
+.list {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  /* width: 150%; */
+  background: #212529;
+  color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-radius: 5px;
+  /*! display: none;  iss madrchod ko use in krna transition k time p*/
+  height: 0;
+  padding: 0;
+  line-height: 40px;
+  box-shadow: 0 0 0 2px rgb(68 68 68 / 50%);
+  list-style-type: none;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  transform: scale(0.75) translateY(-21px);
+  transform-origin: 0 -2%;
+  opacity: 0;
+  z-index: 10;
+}
+#dropList_Country {
+  width: 135%;
+  
+}
+#dropList_Category {
+  width: 200%;
+  max-width: 200px;
+}
+
+.list-active {
+  height: 280px;
+  opacity: 1;
+  transform: scale(0.75) translateY(0px);
+}
+.option-active {
+  background: rgba(0, 0, 0, 1);
+}
+.option:hover {
+  background: rgba(0, 0, 0, 1);
+}
+.option {
+  width: 100%;
+  height: auto;
+  color: 495057;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 0 0 0 12px;
+}
